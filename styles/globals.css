@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -42,7 +46,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 255, 253, 250;
     --background-end-rgb: 255, 253, 250;
 
@@ -104,4 +108,8 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.navbar_white {
+  background-color: #ff000010;
 }
