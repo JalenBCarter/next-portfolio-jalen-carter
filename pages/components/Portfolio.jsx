@@ -6,21 +6,25 @@ export const Portfolio = () => {
 
     let projects = [
         {
-            "name": "John",
-            "description": "Hello World"
+            "name": "Ski App",
+            "description": "Hello World",
+            "image" : "/skiappcrud.png"
         },
         {
-            "name": "Jay",
-            "description": "Hello Mars"
+            "name": "Launchpad App",
+            "description": "Hello World",
+            "image" : "/launchpadadmin.png"
         },
         {
-            "name": "Sam",
-            "description": "Hello Mars"
+            "name": "Ski App",
+            "description": "Hello World",
+            "image" : "/techroster.png"
         },
         {
-            "name": "Bob",
-            "description": "Hello Mars"
-        }
+            "name": "Ski App",
+            "description": "Hello World",
+            "image" : "/spacetagram.png"
+        },
     ]
 
     return (
@@ -29,14 +33,16 @@ export const Portfolio = () => {
             <div className="border border-gray-300 my-3 w-[100%]"></div>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
                 {projects.map((proj, key) =>
-                    <div key={key} class="bg-white rounded-lg shadow-xl">
-                        <a href="#">
+                    <div key={key} class="bg-white rounded-lg shadow m-2 ">
+                        {/* <a href="#">
                             <Image
                                 src={mtns}
                                 alt="project image"
                                 className="rounded-t-lg"
                             />
-                        </a>
+                        </a> */}
+                        <div className="w-[100%] h-[300px] rounded-t-lg" style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+    url(${proj.image})`, backgroundSize: "cover"}} ></div>
                         <div class="p-5">
                             <a href="#">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>

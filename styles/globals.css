@@ -125,3 +125,14 @@ p {
     url('../public/images/bg-image.jpg');
   background-size: cover;
 }
+
+.headshot {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: red;
+  background-image:
+  linear-gradient(to bottom, rgba(159, 223, 212, 0.168), rgba(0, 0, 0, 0.173)),
+  url('../public/images/headshot.jpg');
+  background-size: cover;
+}
