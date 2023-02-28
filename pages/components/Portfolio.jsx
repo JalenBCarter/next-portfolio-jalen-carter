@@ -25,6 +25,11 @@ export const Portfolio = () => {
             "description": "Hello World",
             "image": "/spacetagram.png"
         },
+        {
+            "name": "Music Player",
+            "description": "Hello World",
+            "image": "/spacetagram.png"
+        },
     ]
 
     return (
