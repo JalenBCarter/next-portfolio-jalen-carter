@@ -138,3 +138,11 @@ p {
 .portfolioImage {
   background-size: "cover"
 }
+
+.customCard {
+  background: #fffdfa;
+  /* padding: 40px; */
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1),
+    0px 8px 40px rgba(1, 56, 255, 0.13);
+  /* border-radius: 18px; */
+}

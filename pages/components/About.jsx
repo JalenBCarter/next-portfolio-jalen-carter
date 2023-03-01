@@ -1,3 +1,5 @@
+// import resume from "../../public/resume.pdf";
+
 import React from 'react'
 
 export const About = () => {

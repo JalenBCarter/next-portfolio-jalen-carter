@@ -35,17 +35,22 @@ export const Portfolio = () => {
             "description": "Another Instagram-like web application for displaying photos, but this time, you can leave comments and seek through the photo collection with the thumbnail display.",
             "image": "/photoalbum.png"
         },
+        {
+            "name": "Carbon Calculator Frontend",
+            "description": "A frontend project where I designed and implemented the UI for Acuicy's carbon calculator.",
+            "image": "/acuicy.png"
+        },
     ]
 
     return (
-        <div id="portfolio" className="p-4 mt-[40px] w-[100%] flex flex-col items-center">
-            <div className="text-3xl mt-[50px]">Here are some of my projects!</div>
-            <div className="border border-gray-300 my-3 w-[100%]"></div>
+        <div id="portfolio" className="p-4 w-[100%] flex flex-col items-center">
+            <div className="text-3xl my-[50px]">Here are some of my projects!</div>
+            {/* <div className="border border-gray-300 my-3 w-[100%]"></div> */}
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 w-[100%]">
                 {projects.map((proj, key) =>
-                    <div key={key} class="rounded-lg shadow-lg">
+                    <div key={key} class="m-4 rounded-lg customCard border border-gray-200">   
                         <div className="w-[100%] h-[300px] rounded-t-lg" style={{
-                            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url(${proj.image})`, backgroundSize: "cover", backgroundPosition: "center"
+                            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 25, 0.5)), url(${proj.image})`, backgroundSize: "cover", backgroundPosition: "center"
                         }} ></div>
                         <div class="p-5">
                             <a href="#">
