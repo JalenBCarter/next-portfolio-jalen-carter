@@ -40,7 +40,7 @@ export const Portfolio = () => {
                 {projects.map((proj, key) =>
                     <div key={key} class="rounded-lg shadow-md m-2 hover:shadow-lg">
                         <div className="w-[100%] h-[300px] rounded-t-lg" style={{
-                            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(${proj.image})`, backgroundSize: "cover", backgroundPosition: "center"
+                            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(${proj.image})`, backgroundSize: "cover", backgroundPosition: "center"
                         }} ></div>
                         <div class="p-5">
                             <a href="#">
