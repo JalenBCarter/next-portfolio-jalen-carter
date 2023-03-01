@@ -3,8 +3,13 @@ import Image from 'next/image'
 import mtns from '../../public/images/bg-image.jpg'
 
 export const Portfolio = () => {
-
+    
     let projects = [
+        {
+            "name": "Eclipse",
+            "description": "The project started it all... My first experience with javascript. A dynamic piece of interactive art. Though this is a simple three-file DOM manipulation piece, this is where my love for art became fused that of programming.",
+            "image": "/eclipse.png"
+        },
         {
             "name": "Ski App",
             "description": "This project was a collaboration for Ski Wentworth to develop an application to allow smoother member sign-in, data collection and analysis.",
@@ -23,11 +28,6 @@ export const Portfolio = () => {
         {
             "name": "Spacetagram",
             "description": "An Instagram-like web application that utilizes NASA’s “Image of the Day” API to build that displays post data for the current day and allows the user to view historical posts since the API has been active.",
-            "image": "/spacetagram.png"
-        },
-        {
-            "name": "Music Player",
-            "description": "Hello World",
             "image": "/spacetagram.png"
         },
     ]

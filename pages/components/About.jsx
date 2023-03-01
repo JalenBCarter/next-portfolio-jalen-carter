@@ -2,7 +2,7 @@ import React from 'react'
 
 export const About = () => {
     return (
-        <div  className="px-[15px] sm:px-[50px] lg:px-[50px] mx-auto flex flex-col lg:flex-row items-center justify-around my-[80px] ">
+        <div  className="px-[15px] sm:px-[50px] lg:px-[50px] mx-auto flex flex-col lg:flex-row items-center justify-around my-[80px] text-center md:text-start">
             <div className='headshot my-5'></div>
 
             <div className="lg:w-[70%] mx-3">

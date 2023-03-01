@@ -9,6 +9,11 @@ export const Skills = () => {
             "icon" : "devicon-javascript-plain"
         },
         {
+            "skill": "React",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, dolor dolorem porro doloribus itaque eaque numquam voluptas assumenda nisi autem.",
+            "icon" : "devicon-react-plain"
+        },
+        {
             "skill": "Java",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, dolor dolorem porro doloribus itaque eaque numquam voluptas assumenda nisi autem.",
             "icon" : "devicon-java-plain"
@@ -39,9 +44,14 @@ export const Skills = () => {
             "icon" : "devicon-css3-plain"
         },
         {
-            "skill": "React",
+            "skill": "Bootstrap",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, dolor dolorem porro doloribus itaque eaque numquam voluptas assumenda nisi autem.",
-            "icon" : "devicon-react-plain"
+            "icon" : "devicon-bootstrap-plain"
+        },
+        {
+            "skill": "Tailwind",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, dolor dolorem porro doloribus itaque eaque numquam voluptas assumenda nisi autem.",
+            "icon" : "devicon-tailwindcss-plain"
         },
         {
             "skill": "MongoDB",
@@ -61,13 +71,12 @@ export const Skills = () => {
     ]
 
     return (
-        <div className="p-4 mt-[40px] w-[100%] flex flex-col items-center bg-gray-800">
-            {/* <div className="text-3xl">Technologies</div> */}
-            {/* <div className="border border-gray-300 my-3 w-[100%]"></div> */}
+        <div className="p-4 w-[100%] flex flex-col items-center bg-gray-900 text-gray-400 text-center">
+            <div className="text-xl p-4 text-gray-500">My current pallete of Technologies</div>
             <div className="flex flex-wrap justify-center">
                 {skills.map((skill, key) =>
                     <div key={key} className="m-4">
-                        <i class={skill.icon + " text-5xl text-gray-400"}></i>
+                        <i class={skill.icon + " text-5xl"}></i>
                     </div>
                 )}
             </div>
