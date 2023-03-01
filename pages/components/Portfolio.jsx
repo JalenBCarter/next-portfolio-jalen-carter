@@ -30,6 +30,11 @@ export const Portfolio = () => {
             "description": "An Instagram-like web application that utilizes NASA’s “Image of the Day” API to build that displays post data for the current day and allows the user to view historical posts since the API has been active.",
             "image": "/spacetagram.png"
         },
+        {
+            "name": "Photo Album",
+            "description": "Another Instagram-like web application for displaying photos, but this time, you can leave comments and seek through the photo collection with the thumbnail display.",
+            "image": "/photoalbum.png"
+        },
     ]
 
     return (
@@ -38,9 +43,9 @@ export const Portfolio = () => {
             <div className="border border-gray-300 my-3 w-[100%]"></div>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 w-[100%]">
                 {projects.map((proj, key) =>
-                    <div key={key} class="rounded-lg shadow-md m-2 hover:shadow-lg">
+                    <div key={key} class="rounded-lg shadow-lg">
                         <div className="w-[100%] h-[300px] rounded-t-lg" style={{
-                            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(${proj.image})`, backgroundSize: "cover", backgroundPosition: "center"
+                            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url(${proj.image})`, backgroundSize: "cover", backgroundPosition: "center"
                         }} ></div>
                         <div class="p-5">
                             <a href="#">
