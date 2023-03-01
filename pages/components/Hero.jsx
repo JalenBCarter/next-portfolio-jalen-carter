@@ -16,7 +16,7 @@ export const Hero = () => {
         <div className="heroText mx-[50px] text-center">
           <h1 className="text-white text-5xl">Hi, I'm <span className="text--400">Jalen</span></h1>
           <div className="border border-gray-300 my-3 w-[100%]"></div>
-          <h1 className="text-white text-2xl">Web Developer</h1>
+          <h1 id="about" className="text-white text-2xl">Web Developer</h1>
         </div>
       </div>
     </div>
