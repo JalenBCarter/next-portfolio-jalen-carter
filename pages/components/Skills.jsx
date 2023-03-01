@@ -72,7 +72,7 @@ export const Skills = () => {
 
     return (
         <div className="w-screen flex flex-col items-center">
-            {/* <div className="text-xl p-4 text-gray-500">A peek at my current pallete of Technologies</div> */}
+            <div className="text-xl p-4 text-gray-500">A peek at my current pallete of Technologies</div>
             <div className="p-4 w-[100%] flex flex-col items-center bg-gray-900 text-gray-400 text-center">
                 <div className="flex flex-wrap justify-center">
                     {skills.map((skill, key) =>
