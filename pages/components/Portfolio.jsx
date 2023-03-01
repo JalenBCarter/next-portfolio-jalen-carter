@@ -3,7 +3,7 @@ import Image from 'next/image'
 import mtns from '../../public/images/bg-image.jpg'
 
 export const Portfolio = () => {
-    
+
     let projects = [
         {
             "name": "Eclipse",
@@ -12,7 +12,7 @@ export const Portfolio = () => {
         },
         {
             "name": "Ski App",
-            "description": "This project was a collaboration for Ski Wentworth to develop an application to allow smoother member sign-in, data collection and analysis.",
+            "description": "This project is a collaboration for Ski Wentworth to develop an application to allow smoother member sign-in, data collection and analysis.",
             "image": "/skiappcrud.png"
         },
         {
@@ -26,6 +26,11 @@ export const Portfolio = () => {
             "image": "/techroster.png"
         },
         {
+            "name": "Carbon Calculator Frontend",
+            "description": "A frontend project where I designed and implemented the UI for Acuicy's carbon calculator.",
+            "image": "/acuicy.png"
+        },
+        {
             "name": "Spacetagram",
             "description": "An Instagram-like web application that utilizes NASA’s “Image of the Day” API to build that displays post data for the current day and allows the user to view historical posts since the API has been active.",
             "image": "/spacetagram.png"
@@ -35,11 +40,6 @@ export const Portfolio = () => {
             "description": "Another Instagram-like web application for displaying photos, but this time, you can leave comments and seek through the photo collection with the thumbnail display.",
             "image": "/photoalbum.png"
         },
-        {
-            "name": "Carbon Calculator Frontend",
-            "description": "A frontend project where I designed and implemented the UI for Acuicy's carbon calculator.",
-            "image": "/acuicy.png"
-        },
     ]
 
     return (
@@ -48,9 +48,9 @@ export const Portfolio = () => {
             {/* <div className="border border-gray-300 my-3 w-[100%]"></div> */}
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 w-[100%]">
                 {projects.map((proj, key) =>
-                    <div key={key} class="m-4 rounded-lg customCard border border-gray-200">   
+                    <div key={key} class="m-4 rounded-lg customCard border border-gray-300">
                         <div className="w-[100%] h-[300px] rounded-t-lg" style={{
-                            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 25, 0.5)), url(${proj.image})`, backgroundSize: "cover", backgroundPosition: "center"
+                            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 25, 0.2)), url(${proj.image})`, backgroundSize: "cover", backgroundPosition: "center"
                         }} ></div>
                         <div class="p-5">
                             <a href="#">
@@ -61,6 +61,7 @@ export const Portfolio = () => {
                     </div>
                 )}
             </div>
+            <div className="text-3xl my-[50px]">And more to come...</div>
         </div>
     )
 }
