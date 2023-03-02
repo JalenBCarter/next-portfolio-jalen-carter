@@ -40,6 +40,11 @@ export const Portfolio = () => {
             "description": "Another Instagram-like web application for displaying photos, but this time, you can leave comments and seek through the photo collection with the thumbnail display.",
             "image": "/photoalbum.png"
         },
+        {
+            "name": "Weather App",
+            "description": "A weather app that allows you to select a location and get various weather data based on the returned JSON from the Openweathermap API.",
+            "image": "/weatherapp.png"
+        },
     ]
 
     return (
