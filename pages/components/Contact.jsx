@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Contact = () => {
     return (
-        <div className="w-screen p-4 flex justify-center bg-gray-900">
+        <div className="w-screen p-4 flex justify-center bg-gray-300">
             <a target="blank" href="https://github.com/JalenBCarter">
                 <i class="fa-brands fa-github text-gray-400 text-4xl m-4"></i>
             </a>
