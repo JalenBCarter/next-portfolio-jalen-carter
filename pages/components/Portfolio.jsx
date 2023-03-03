@@ -201,7 +201,7 @@ export const Portfolio = () => {
                 {projects.map((proj, key) =>
                     <div key={key} class="m-4 rounded-lg customCard border border-gray-300">
                         <div className="w-[100%] h-[300px] rounded-t-lg" style={{
-                            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 25, 0.2)), url(${proj.image})`, backgroundSize: "cover", backgroundPosition: "center"
+                            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 50, 0.2)), url(${proj.image})`, backgroundSize: "cover", backgroundPosition: "center"
                         }} ></div>
                         <div class="p-5">
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">{proj.name}</h5>
